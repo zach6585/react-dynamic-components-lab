@@ -13,7 +13,7 @@ export default class ColorBox extends Component {
     return (
       <div className="color-box" style={{opacity: this.props.opacity /*replace null with the value*/}}>
         {console.log(this.props.opacity)}
-        {this.props.opacity > 0.2 ? 
+        {newOpacity > 0.2 ? 
           <ColorBox opacity={newOpacity}></ColorBox>        
           :
            null } 
